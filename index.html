@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RangRasika - Authentic Handcrafted Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components/hero.css">
+    <link rel="stylesheet" href="assets/css/components/navigation.css">
+    <link rel="stylesheet" href="assets/css/components/gallery.css">
+    <link rel="stylesheet" href="assets/css/components/pricing.css">
+    <link rel="stylesheet" href="assets/css/components/contact.css">
+    <link rel="stylesheet" href="assets/css/utilities/animations.css">
+    <link rel="stylesheet" href="assets/css/utilities/variables.css">
+    <link rel="stylesheet" href="assets/css/utilities/responsive.css">
+    <style>
+        .coaching-badge-overlay {
+            position: absolute;
+            top: 25px;
+            right: -50px;
+            background: linear-gradient(135deg, #556B2F, #8FBC8F);  /* Gradient from Dark Olive Green to Dark Sea Green */
+            color: white;
+            padding: 10px 50px;
+            transform: rotate(45deg);
+            font-size: 16px;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            z-index: 2;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            width: 200px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .coaching-badge-overlay:hover {
+            background: linear-gradient(135deg, #8FBC8F, #556B2F);  /* Reverse gradient on hover */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/images/rangrasika.png" alt="RangRasika Logo" class="logo-img">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="scroll-progress"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="assets/images/rangrasika2.png" alt="RangRasika Logo" class="hero-logo-img">
+            </div>
+            <div class="hero-text">
+                <h1 class="hero-title">Welcome to RangRasika</h1>
+                <p class="hero-tagline">Discover the Art of Traditional Beauty</p>
+                <a href="#services" class="hero-cta">Explore Our Services</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Services Gallery Section -->
+    <section class="gallery" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="gallery-tabs">
+                <button class="gallery-tab active" data-category="all">All</button>
+                <button class="gallery-tab" data-category="beauty">Beauty</button>
+                <button class="gallery-tab" data-category="mehendi">Mehendi</button>
+                <button class="gallery-tab" data-category="clothing">Clothing</button>
+            </div>
+            <div class="gallery-grid">
+                <!-- Beauty Services -->
+                <div class="gallery-item" data-category="beauty">
+                    <div class="coaching-badge-overlay">Coaching Available</div>
+                    <img src="assets/images/services/beauty/makeup-cosmetics.jpg" alt="Professional Makeup Kit" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h3>Beauty & Makeovers</h3>
+                        <p>Professional Makeup Services & Training</p>
+                    </div>
+                </div>
+
+                <!-- Mehendi Services -->
+                <div class="gallery-item" data-category="mehendi">
+                    <div class="coaching-badge-overlay">Coaching Available</div>
+                    <img src="assets/images/services/mehendi/mehendi-art.jpg" alt="Intricate Mehendi Design" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h3>Mehendi Art</h3>
+                        <p>Traditional & Modern Designs</p>
+                    </div>
+                </div>
+
+                <!-- Clothing Services -->
+                <div class="gallery-item" data-category="clothing">
+                    <div class="coaching-badge-overlay">Coaching Available</div>
+                    <img src="assets/images/services/clothing/traditional-saree.jpg" alt="Designer Saree" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h3>Styling & Clothing</h3>
+                        <p>Handpainted Sarees and Kurtis</p>
+                    </div>
+                </div>
+
+                <!-- Jewellery Services -->
+                <div class="gallery-item" data-category="jewellery">
+                    <img src="assets/images/services/jewellery/kundan-set.jpg" alt="Kundan Jewellery Set" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h3>Demi-Fine Jewellery</h3>
+                        <p>Luxury & Affordability</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Our Combo Packages</h2>
+            <p class="section-description">Choose your perfect celebration package</p>
+            
+            <div class="pricing-grid">
+                <!-- Festivals & Functions Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Festivals & Functions</h3>
+                        <div class="package-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Makeup & Hairstyling</li>
+                            <li><i class="fas fa-check"></i> Handpainted Saree/Dress</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-cta" data-package="festivals">Enquire Now</button>
+                </div>
+
+                <!-- Mehendi & Sangeet Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Mehendi & Sangeet</h3>
+                        <div class="package-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Makeup & Hairstyling</li>
+                            <li><i class="fas fa-check"></i> Handpainted Saree/Dress</li>
+                            <li><i class="fas fa-check"></i> Jewellery</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-cta" data-package="mehendi-sangeet">Enquire Now</button>
+                </div>
+
+                <!-- Bridal Package -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Complete Package</div>
+                    <div class="pricing-header">
+                        <h3>Bridal Package</h3>
+                        <div class="package-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Makeup & Hairstyling for Haldi and Wedding</li>
+                            <li><i class="fas fa-check"></i> Handpainted Saree/Dress for pre-wedding or haldi</li>
+                            <li><i class="fas fa-check"></i> Jewellery</li>
+                            <li><i class="fas fa-check"></i> Mehendi</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-cta featured" data-package="bridal">Enquire Now</button>
+                </div>
+            </div>
+
+            <!-- Booking Modal -->
+            <div class="booking-modal" id="bookingModal">
+                <div class="modal-content">
+                    <button class="modal-close" aria-label="Close modal">&times;</button>
+                    <h3>Enquire About Package</h3>
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Event Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="package">Selected Package</label>
+                            <input type="text" id="package" name="package" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Requirements</label>
+                            <textarea id="message" name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-description">Have questions? We'd love to hear from you.</p>
+
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p>Jalgaon, 425003</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>+91 7666880754</p>
+                        <p>Mon - Sat: 10:00 AM - 6:00 PM</p>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Social Media</h3>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+                    <div class="inspiration-box">
+                        <div class="quote-container">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <blockquote>
+                                With every brushstroke, every henna swirl, and every thread of color, she's not just creating art — she's weaving her dream into the fabric of the world.
+                            </blockquote>
+                            <i class="fas fa-quote-right quote-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Your Name</label>
+                            <input type="text" id="contactName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" id="contactSubject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="assets/js/vendors/intersection-observer-polyfill.js"></script>
+    <script src="assets/js/modules/navigation.js"></script>
+    <script src="assets/js/modules/hero-animations.js"></script>
+    <script src="assets/js/modules/gallery-manager.js"></script>
+    <script src="assets/js/modules/pricing-reveal.js"></script>
+    <script src="assets/js/modules/contact-manager.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html> 
